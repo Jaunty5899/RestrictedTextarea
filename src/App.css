@@ -1,5 +1,12 @@
-#txtArea {
-  border-radius: 25px;
-  max-width: 250px;
-  max-height: 250px;
+.container {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.txtArea {
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
