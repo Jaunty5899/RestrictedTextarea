@@ -1,17 +1,23 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  const max = 6;
+  const [count, setCount] = useState(0);
 
   return (
-    <div className="container">
+    <div className="txtContainer">
       <textarea
         className="txtArea"
-        cols={40}
-        rows={4}
+        cols={30}
+        rows={3}
         placeholder="Write anything you want"
+        maxLength={max}
+        onInput={(e) => setCount(e.target.value.length)}
       />
+      <span className="limits">
+        {count}/{max}
+      </span>
     </div>
   );
 }

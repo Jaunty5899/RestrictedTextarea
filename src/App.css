@@ -1,6 +1,8 @@
-.container {
-  border: 2px solid white;
+.txtContainer {
+  position: relative;
+  border: 2px solid white; /*red*/
   padding: 20px;
+  padding-bottom: 25px;
   border-radius: 20px;
 }
 .txtArea {
@@ -8,5 +10,18 @@
   border: none;
   outline: none;
   resize: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scrollbar-width: none;
+}
+.limits {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: small;
+}
+
+.limitReachedBorder {
+  border-color: red;
+}
+.limitReachedColor {
+  color: red;
 }
